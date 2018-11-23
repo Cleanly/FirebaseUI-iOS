@@ -259,9 +259,11 @@ __attribute__((deprecated("Instead use authUI:didSignInWithAuthDataResult:error:
 /** @fn invokeResultCallbackWithAuthDataResult:error:
  	@brief Invokes the auth UI result callback.
  	@param authDataResult The sign in data result, if any.
+ 	@param url The url, if any.
  	@param error The error which occurred, if any.
  */
 - (void)invokeResultCallbackWithAuthDataResult:(nullable FIRAuthDataResult *)authDataResult
+										   URL:(nullable NSURL *)url
 										 error:(nullable NSError *)error;
 
 /** @fn invokeOperationCallback:error:
@@ -272,7 +274,6 @@ __attribute__((deprecated("Instead use authUI:didSignInWithAuthDataResult:error:
 - (void)invokeOperationCallback:(FUIAccountSettingsOperationType)operation
 						  error:(NSError *_Nullable)error;
 
-
 /** @fn providerWithID:
  	@brief Returns first provider (if it exists) with specified provider ID.
  	@param providerID The ID of the provider.
@@ -281,7 +282,7 @@ __attribute__((deprecated("Instead use authUI:didSignInWithAuthDataResult:error:
 
 /** @fn signInWithProviderUI:presentingViewController:defaultValue:
  	@brief Signs in with specified provider.
- 	@see FUIAuthDelegate.authUI:didSignInWithAuthDataResult:error: for method callback.
+ 	@see FUIAuthDelegate.authUI:didSignInWithAuthDataResult:URL:error: for method callback.
  	@param providerUI The authentication provider used for signing in.
  	@param presentingViewController The view controller used to present the UI.
  	@param defaultValue The provider default initialization value (e.g. email or phone number) used for signing in.
