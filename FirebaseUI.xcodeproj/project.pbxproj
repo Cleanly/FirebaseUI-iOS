@@ -119,7 +119,7 @@
 		8DA9417C1D678F5400CD3685 /* FUIAuthErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA941551D678F5400CD3685 /* FUIAuthErrors.m */; };
 		8DA9417D1D678F5400CD3685 /* FUIAuthErrorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA941561D678F5400CD3685 /* FUIAuthErrorUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DA9417E1D678F5400CD3685 /* FUIAuthErrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA941571D678F5400CD3685 /* FUIAuthErrorUtils.m */; };
-		8DA9417F1D678F5400CD3685 /* FUIAuthSignInButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA941581D678F5400CD3685 /* FUIAuthSignInButton.h */; };
+		8DA9417F1D678F5400CD3685 /* FUIAuthSignInButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA941581D678F5400CD3685 /* FUIAuthSignInButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DA941801D678F5400CD3685 /* FUIAuthSignInButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA941591D678F5400CD3685 /* FUIAuthSignInButton.m */; };
 		8DA941811D678F5400CD3685 /* FUIAuthStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA9415A1D678F5400CD3685 /* FUIAuthStrings.h */; };
 		8DA941821D678F5400CD3685 /* FUIAuthStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA9415B1D678F5400CD3685 /* FUIAuthStrings.m */; };
