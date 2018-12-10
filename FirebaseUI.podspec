@@ -55,7 +55,8 @@ Pod::Spec.new do |s|
                                 'FirebaseAuthUI/FUIPasswordRecoveryViewController.h',
                                 'FirebaseAuthUI/FUIPasswordSignInViewController.h',
                                 'FirebaseAuthUI/FUIPasswordSignUpViewController.h',
-                                'FirebaseAuthUI/FUIPasswordVerificationViewController.h']
+                                'FirebaseAuthUI/FUIPasswordVerificationViewController.h',
+                            	'FirebaseAuthUI/FUIAuthSignInButton.h']
     auth.source_files = ['FirebaseAuthUI/**/*.{h,m}', 'FirebaseAuthUI/*.{h,m}']
     auth.dependency 'Firebase/Auth', '~> 5.0'
     auth.resource_bundle = {
