@@ -374,7 +374,7 @@ PODS:
 DEPENDENCIES:
   - FBSDKCoreKit (= 4.35.0)
   - FBSDKLoginKit (= 4.35.0)
-  - Firebase/Auth
+  - Firebase/Auth (~> 6.0)
   - Firebase/Database
   - Firebase/Firestore
   - Firebase/Storage
@@ -447,6 +447,6 @@ SPEC CHECKSUMS:
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: e1631612545a862d4672de2b190795a68df322e7
+PODFILE CHECKSUM: 0ec1fcb243d969f96fb3c85c45d9fc0e65a698dd
 
-COCOAPODS: 1.9.2
+COCOAPODS: 1.9.3
