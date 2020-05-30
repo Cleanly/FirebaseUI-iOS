@@ -253,7 +253,7 @@ typedef NS_ENUM(NSUInteger, FIRProviders) {
   });
 
 
-  OCMStub([self.authMock createUserAndRetrieveDataWithEmail:OCMOCK_ANY
+  OCMStub([self.authMock createUserWithEmail:OCMOCK_ANY
                                                    password:OCMOCK_ANY
                                                  completion:OCMOCK_ANY]).
       andDo(^(NSInvocation *invocation) {

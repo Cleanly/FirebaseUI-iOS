@@ -107,6 +107,7 @@ target 'FirebaseUISample' do
   use_frameworks!
   platform :ios, '9.0'
 
+  pod 'GoogleUtilities'
   pod 'OCMock'
   # pod 'FirebaseUI/Anonymous', :path => '.'
   # pod 'FirebaseUI/Auth', :path => '.'
