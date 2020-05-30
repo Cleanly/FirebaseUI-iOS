@@ -228,6 +228,9 @@ PODS:
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.35.0):
     - FBSDKCoreKit
+  - Firebase/Auth (6.25.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 6.5.3)
   - Firebase/CoreOnly (6.25.0):
     - FirebaseCore (= 6.7.1)
   - Firebase/Database (6.25.0):
@@ -371,10 +374,10 @@ PODS:
 DEPENDENCIES:
   - FBSDKCoreKit (= 4.35.0)
   - FBSDKLoginKit (= 4.35.0)
+  - Firebase/Auth
   - Firebase/Database
   - Firebase/Firestore
   - Firebase/Storage
-  - FirebaseAuth
   - GoogleSignIn (~> 4.0)
   - GoogleUtilities
   - OCMock
@@ -444,6 +447,6 @@ SPEC CHECKSUMS:
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: b03dc8bc9dfd264cacae6c3339264fc4be412c30
+PODFILE CHECKSUM: e1631612545a862d4672de2b190795a68df322e7
 
 COCOAPODS: 1.9.2

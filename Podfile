@@ -29,7 +29,7 @@ target 'FirebaseAuthUI' do
   use_frameworks!
 
   # Pods for Auth
-  pod 'FirebaseAuth'
+  pod 'Firebase/Auth'
 
   target 'FirebaseAuthUITests' do
     inherit! :search_paths
