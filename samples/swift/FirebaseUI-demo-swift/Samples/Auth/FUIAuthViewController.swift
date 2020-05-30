@@ -38,6 +38,7 @@ enum Providers: Int, RawRepresentable {
   case Google
   case Facebook
   case Twitter
+  case Apple
   case Phone
 }
 
@@ -88,6 +89,9 @@ class FUIAuthViewController: UITableViewController {
     self.tableView.selectRow(at: IndexPath(row: Providers.Twitter.rawValue, section: UISections.Providers.rawValue),
                              animated: false,
                              scrollPosition: .none)
+    self.tableView.selectRow(at: IndexPath(row: Providers.Apple.rawValue, section: UISections.Providers.rawValue),
+                             animated: false,
+                             scrollPosition: .none)
     self.tableView.selectRow(at: IndexPath(row: Providers.Phone.rawValue, section: UISections.Providers.rawValue),
                              animated: false,
                              scrollPosition: .none)
@@ -97,7 +101,7 @@ class FUIAuthViewController: UITableViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
 
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.rowHeight = UITableView.automaticDimension;
     self.tableView.estimatedRowHeight = 240;
 
     self.authStateDidChangeHandle =
@@ -116,7 +120,7 @@ class FUIAuthViewController: UITableViewController {
   }
 
   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return UITableViewAutomaticDimension
+    return UITableView.automaticDimension
   }
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -282,12 +286,32 @@ class FUIAuthViewController: UITableViewController {
                                                                              kGoogleUserInfoProfileScope])
               : FUIGoogleAuth()
           case Providers.Twitter.rawValue:
-            provider = FUITwitterAuth()
+            let buttonColor =
+                UIColor(red: 71.0/255.0, green: 154.0/255.0, blue: 234.0/255.0, alpha: 1.0)
+            guard let iconPath = Bundle.main.path(forResource: "twtrsymbol", ofType: "png") else {
+              NSLog("Warning: Unable to find Twitter icon")
+              continue
+            }
+            provider = FUIOAuth(authUI: self.authUI!,
+                                  providerID: "twitter.com",
+                                  buttonLabelText: "Sign in with Twitter",
+                                  shortName: "Twitter",
+                                  buttonColor: buttonColor,
+                                  iconImage: UIImage(contentsOfFile: iconPath)!,
+                                  scopes: ["user.readwrite"],
+                                  customParameters: ["prompt" : "consent"],
+                                  loginHintKey: nil)
           case Providers.Facebook.rawValue:
             provider = self.customScopesSwitch.isOn ? FUIFacebookAuth(permissions: ["email",
                                                                                     "user_friends",
                                                                                     "ads_read"])
               : FUIFacebookAuth()
+          case Providers.Apple.rawValue:
+            if #available(iOS 13.0, *) {
+              provider = FUIOAuth.appleAuthProvider()
+            } else {
+              provider = nil
+            }
           case Providers.Phone.rawValue:
             provider = FUIPhoneAuth(authUI: self.authUI!)
           default: provider = nil

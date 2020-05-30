@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89B2924722568B1C00CEF7D7 /* twtrsymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B2924622568B1C00CEF7D7 /* twtrsymbol.png */; };
 		8D5F93B01D9B192D00D5A2E4 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F93AF1D9B192D00D5A2E4 /* StorageViewController.swift */; };
 		8DABC9891D3D82D600453807 /* FUIAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DABC9881D3D82D600453807 /* FUIAppDelegate.swift */; };
 		8DABC9901D3D82D600453807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DABC98F1D3D82D600453807 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89B2924622568B1C00CEF7D7 /* twtrsymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twtrsymbol.png; sourceTree = "<group>"; };
 		8D5F93AF1D9B192D00D5A2E4 /* StorageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
 		8DABC9851D3D82D600453807 /* FirebaseUI-demo-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FirebaseUI-demo-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DABC9881D3D82D600453807 /* FUIAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUIAppDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				8DABC9871D3D82D600453807 /* FirebaseUI-demo-swift */,
 				8DABC99C1D3D82D600453807 /* FirebaseUI-demo-swiftTests */,
 				8DABC9861D3D82D600453807 /* Products */,
+				B9817BB8ABCEED12F89E5CF6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,6 +235,13 @@
 				8DABC99F1D3D82D600453807 /* Info.plist */,
 			);
 			path = "FirebaseUI-demo-swiftTests";
+			sourceTree = "<group>";
+		};
+		B9817BB8ABCEED12F89E5CF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		C302C1D31D91CC7B00ADBD41 /* Samples */ = {
@@ -280,6 +290,7 @@
 		C30E94251EF8800D00F032B1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				89B2924622568B1C00CEF7D7 /* twtrsymbol.png */,
 				C30E94261EF8800D00F032B1 /* LaunchScreen.storyboard */,
 				C30E942E1EF8801500F032B1 /* Localizable.strings */,
 				C30E94281EF8800D00F032B1 /* Main.storyboard */,
@@ -332,12 +343,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Firebase, Inc.";
 				TargetAttributes = {
 					8DABC9841D3D82D600453807 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -349,14 +360,14 @@
 					};
 					8DABC9981D3D82D600453807 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1020;
 						TestTargetID = 8DABC9841D3D82D600453807;
 					};
 				};
 			};
 			buildConfigurationList = 8DABC9801D3D82D600453807 /* Build configuration list for PBXProject "FirebaseUI-demo-swift" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -465,6 +476,7 @@
 				C39BC04A1DB812030060F6AF /* FUICustomPasswordSignInViewController.xib in Resources */,
 				C39BC03E1DB7F74B0060F6AF /* FUICustomAuthPickerViewController.xib in Resources */,
 				C3F23ECD1D80F3300020509F /* GoogleService-Info.plist in Resources */,
+				89B2924722568B1C00CEF7D7 /* twtrsymbol.png in Resources */,
 				C39BC0421DB811630060F6AF /* FUICustomEmailEntryViewController.xib in Resources */,
 				C30E942B1EF8800D00F032B1 /* Main.storyboard in Resources */,
 				C30E942C1EF8801500F032B1 /* Localizable.strings in Resources */,
@@ -632,14 +644,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -682,14 +702,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -750,7 +778,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -788,7 +816,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.google.firebase.firebaseui.FirebaseUI-demo-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -800,7 +828,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.firebase.FirebaseUI-demo-swiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirebaseUI-demo-swift.app/FirebaseUI-demo-swift";
 			};
 			name = Debug;
@@ -813,7 +841,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.firebase.FirebaseUI-demo-swiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirebaseUI-demo-swift.app/FirebaseUI-demo-swift";
 			};
 			name = Release;
