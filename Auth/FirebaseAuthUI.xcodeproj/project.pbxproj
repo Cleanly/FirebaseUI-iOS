@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D69E26321DD4BD100CFA49B /* FirebaseAuthUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D69E25921DD4BD000CFA49B /* FirebaseAuthUI.framework */; };
 		8D69E26A21DD4BD100CFA49B /* FirebaseAuthUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D69E25C21DD4BD000CFA49B /* FirebaseAuthUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D69E29321DD4C5100CFA49B /* FUIAuthSignInButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D69E27321DD4C5000CFA49B /* FUIAuthSignInButton.h */; };
+		8D69E29321DD4C5100CFA49B /* FUIAuthSignInButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D69E27321DD4C5000CFA49B /* FUIAuthSignInButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D69E29421DD4C5100CFA49B /* FUIAuthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D69E27421DD4C5000CFA49B /* FUIAuthTableViewCell.xib */; };
 		8D69E29521DD4C5100CFA49B /* FUIAuthStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D69E27521DD4C5000CFA49B /* FUIAuthStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D69E29621DD4C5100CFA49B /* FUIAuthErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D69E27621DD4C5000CFA49B /* FUIAuthErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };

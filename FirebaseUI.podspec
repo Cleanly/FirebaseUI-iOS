@@ -63,7 +63,8 @@ Pod::Spec.new do |s|
                                 'Auth/FirebaseAuthUI/FUIAuthStrings.h',
                                 'Auth/FirebaseAuthUI/FUIPrivacyAndTermsOfServiceView.h',
                                 'Auth/FirebaseAuthUI/FUIAuthTableViewCell.h',
-                                'Auth/FirebaseAuthUI/FUIAuthTableHeaderView.h']
+                                'Auth/FirebaseAuthUI/FUIAuthTableHeaderView.h'
+                                'Auth/FirebaseAuthUI/FUIAuthSignInButton.h']
     auth.source_files = ['Auth/FirebaseAuthUI/**/*.{h,m}', 'Auth/FirebaseAuthUI/*.{h,m}']
     auth.dependency 'Firebase/Auth', '~> 6.0'
     auth.dependency 'GoogleUtilities/UserDefaults'
