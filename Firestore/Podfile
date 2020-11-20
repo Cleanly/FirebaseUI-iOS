@@ -1,7 +1,11 @@
 # source 'sso://cpdc-internal/firebase'
 source 'https://github.com/CocoaPods/Specs.git'
 
+<<<<<<< HEAD
 platform :ios, '8.0'
+=======
+platform :ios, '10.0'
+>>>>>>> FirebaseUI/master
 
 target 'FirebaseFirestoreUI' do
   use_frameworks!

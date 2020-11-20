@@ -14,7 +14,11 @@
 //  limitations under the License.
 //
 
+<<<<<<< HEAD
 @import UIKit;
+=======
+#import <UIKit/UIKit.h>
+>>>>>>> FirebaseUI/master
 
 #import <FirebaseStorage/FirebaseStorage.h>
 #import <SDWebImage/SDWebImage.h>

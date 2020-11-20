@@ -20,6 +20,10 @@
 #import "FUIAuth.h"
 #import "FUIAuthUtils.h"
 #import "FUIAuthPickerViewController.h"
+<<<<<<< HEAD:Auth/FirebaseAuthUITests/FUIAuthTest.m
+=======
+#import <OCMock/OCMock.h>
+>>>>>>> FirebaseUI/master:FirebaseAuthUITests/FUIAuthTest.m
 
 @interface FUILoginProvider : NSObject <FUIAuthProvider>
 @property (nonatomic, assign) BOOL canHandleURLs;
@@ -43,6 +47,10 @@
 
 - (UIColor *)buttonTextColor {
   return [UIColor whiteColor];
+}
+
+- (FUIButtonAlignment)buttonAlignment {
+  return FUIButtonAlignmentCenter;
 }
 
 #pragma clang diagnostic push
@@ -135,6 +143,16 @@
   handled = [self.authUI handleOpenURL:[NSURL URLWithString:@"https://google.com/"]
                      sourceApplication:nil];
   XCTAssert(handled == YES, @"expected authUI with providers that can handle open URLs to handle opening URL");
+}
+
+- (void)testUseEmulatorSetsFIRAuthEmulator {
+  id mockAuth = OCMClassMock([FIRAuth class]);
+  OCMStub(ClassMethod([mockAuth auth])).andReturn(mockAuth);
+
+  self.authUI = [FUIAuth authUIWithAuth:mockAuth];
+  [self.authUI useEmulatorWithHost:@"host" port:12345];
+
+  OCMVerify([mockAuth useEmulatorWithHost:@"host" port:12345]);
 }
 
 @end

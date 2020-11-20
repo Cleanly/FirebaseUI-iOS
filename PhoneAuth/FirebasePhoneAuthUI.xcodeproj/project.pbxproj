@@ -3,7 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
+<<<<<<< HEAD
 	objectVersion = 50;
+=======
+	objectVersion = 51;
+>>>>>>> FirebaseUI/master
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -810,11 +814,24 @@
 					"@loader_path/Frameworks",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+<<<<<<< HEAD
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
 				);
 				OTHER_LDFLAGS = (
+=======
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+>>>>>>> FirebaseUI/master
 					"-ObjC",
 					"-framework",
 					"\"Foundation\"",
@@ -848,11 +865,24 @@
 					"@loader_path/Frameworks",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+<<<<<<< HEAD
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
 				);
 				OTHER_LDFLAGS = (
+=======
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+>>>>>>> FirebaseUI/master
 					"-ObjC",
 					"-framework",
 					"\"Foundation\"",

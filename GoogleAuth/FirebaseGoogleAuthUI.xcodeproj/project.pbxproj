@@ -3,7 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
+<<<<<<< HEAD
 	objectVersion = 50;
+=======
+	objectVersion = 51;
+>>>>>>> FirebaseUI/master
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -145,12 +149,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
+=======
+		2F1A7A9CC42931C0584896C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+>>>>>>> FirebaseUI/master
 		8D69E48D21DE8CAF00CFA49B = {
 			isa = PBXGroup;
 			children = (
 				8D69E49921DE8CAF00CFA49B /* FirebaseGoogleAuthUI */,
 				8D69E4A421DE8CAF00CFA49B /* FirebaseGoogleAuthUITests */,
 				8D69E49821DE8CAF00CFA49B /* Products */,
+<<<<<<< HEAD
+=======
+				2F1A7A9CC42931C0584896C1 /* Pods */,
+>>>>>>> FirebaseUI/master
 			);
 			sourceTree = "<group>";
 		};
@@ -260,7 +278,11 @@
 		8D69E48E21DE8CAF00CFA49B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+<<<<<<< HEAD
 				LastUpgradeCheck = 1010;
+=======
+				LastUpgradeCheck = 1140;
+>>>>>>> FirebaseUI/master
 				ORGANIZATIONNAME = Firebase;
 				TargetAttributes = {
 					8D69E49621DE8CAF00CFA49B = {
@@ -519,6 +541,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+<<<<<<< HEAD
+=======
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+>>>>>>> FirebaseUI/master
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -581,6 +607,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+<<<<<<< HEAD
+=======
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+>>>>>>> FirebaseUI/master
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -663,8 +693,11 @@
 					"-framework",
 					"\"GoogleSignIn\"",
 					"-framework",
+<<<<<<< HEAD
 					"\"GoogleToolboxForMac\"",
 					"-framework",
+=======
+>>>>>>> FirebaseUI/master
 					"\"GoogleUtilities\"",
 					"-framework",
 					"\"LocalAuthentication\"",
@@ -714,8 +747,11 @@
 					"-framework",
 					"\"GoogleSignIn\"",
 					"-framework",
+<<<<<<< HEAD
 					"\"GoogleToolboxForMac\"",
 					"-framework",
+=======
+>>>>>>> FirebaseUI/master
 					"\"GoogleUtilities\"",
 					"-framework",
 					"\"LocalAuthentication\"",
@@ -746,6 +782,7 @@
 					"@loader_path/Frameworks",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+<<<<<<< HEAD
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac\"",
@@ -753,6 +790,21 @@
 					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
 				);
 				OTHER_LDFLAGS = (
+=======
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+>>>>>>> FirebaseUI/master
 					"-ObjC",
 					"-framework",
 					"\"CoreGraphics\"",
@@ -763,8 +815,11 @@
 					"-framework",
 					"\"GTMSessionFetcher\"",
 					"-framework",
+<<<<<<< HEAD
 					"\"GoogleToolboxForMac\"",
 					"-framework",
+=======
+>>>>>>> FirebaseUI/master
 					"\"GoogleUtilities\"",
 					"-framework",
 					"\"LocalAuthentication\"",
@@ -796,6 +851,7 @@
 					"@loader_path/Frameworks",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+<<<<<<< HEAD
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac\"",
@@ -803,6 +859,21 @@
 					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
 				);
 				OTHER_LDFLAGS = (
+=======
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+>>>>>>> FirebaseUI/master
 					"-ObjC",
 					"-framework",
 					"\"CoreGraphics\"",
@@ -813,8 +884,11 @@
 					"-framework",
 					"\"GTMSessionFetcher\"",
 					"-framework",
+<<<<<<< HEAD
 					"\"GoogleToolboxForMac\"",
 					"-framework",
+=======
+>>>>>>> FirebaseUI/master
 					"\"GoogleUtilities\"",
 					"-framework",
 					"\"LocalAuthentication\"",

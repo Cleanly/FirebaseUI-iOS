@@ -539,6 +539,19 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+<<<<<<< HEAD
+=======
+					"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth",
+					"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore",
+					"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics",
+					"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI",
+					"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher",
+					"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport",
+					"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities",
+					"${PODS_CONFIGURATION_BUILD_DIR}/OCMock",
+					"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC",
+					"${PODS_CONFIGURATION_BUILD_DIR}/nanopb",
+>>>>>>> FirebaseUI/master
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -570,6 +583,19 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+<<<<<<< HEAD
+=======
+					"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth",
+					"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore",
+					"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics",
+					"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI",
+					"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher",
+					"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport",
+					"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities",
+					"${PODS_CONFIGURATION_BUILD_DIR}/OCMock",
+					"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC",
+					"${PODS_CONFIGURATION_BUILD_DIR}/nanopb",
+>>>>>>> FirebaseUI/master
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",

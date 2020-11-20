@@ -198,9 +198,15 @@ static NSString *const kEmailLinkSignInLinkingCredentialKey = @"FIRAuthEmailLink
       controller = [[FUIEmailEntryViewController alloc] initWithAuthUI:self.authUI];
     }
   } else {
+<<<<<<< HEAD
     if ([delegate respondsToSelector:@selector(emailEntryViewControllerForAuthUI:)]) {
       controller = [delegate passwordSignInViewControllerForAuthUI:self.authUI
                                                              email:defaultValue ?: @""];
+=======
+    if ([delegate respondsToSelector:@selector(passwordSignInViewControllerForAuthUI:email:)]) {
+      controller = [delegate passwordSignInViewControllerForAuthUI:self.authUI
+                                                             email:defaultValue];
+>>>>>>> FirebaseUI/master
     } else {
       controller = [[FUIPasswordSignInViewController alloc] initWithAuthUI:self.authUI
                                                                      email:defaultValue];

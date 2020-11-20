@@ -14,6 +14,7 @@
 //  limitations under the License.
 //
 
+<<<<<<< HEAD
 #import <FirebaseUI/FirebaseAuthUI.h>
 
 #import <AuthenticationServices/AuthenticationServices.h>
@@ -21,6 +22,15 @@
 #import "FUIOAuth.h"
 #import <FirebaseUI/FUIAuthBaseViewController.h>
 #import <FirebaseUI/FUIAuthBaseViewController_Internal.h>
+=======
+#import "FUIOAuth.h"
+
+#import <AuthenticationServices/AuthenticationServices.h>
+#import <FirebaseUI/FirebaseAuthUI.h>
+#import <FirebaseUI/FUIAuthBaseViewController.h>
+#import <FirebaseUI/FUIAuthBaseViewController_Internal.h>
+#import "FUIAuth_Internal.h"
+>>>>>>> FirebaseUI/master
 #import "FUIAuthErrorUtils.h"
 
 /** @var kTableName
@@ -79,6 +89,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, strong) UIColor *buttonBackgroundColor;
 
+<<<<<<< HEAD
+=======
+/** @property buttonTextColor
+ @brief The text color that should be used for the sign in button of the provider.
+ */
+@property(nonatomic, readwrite) UIColor *buttonTextColor;
+
+>>>>>>> FirebaseUI/master
 /** @property scopes
     @brief Array used to configure the OAuth scopes.
  */
@@ -118,11 +136,19 @@ NS_ASSUME_NONNULL_BEGIN
     _signInLabel = buttonLabelText;
     _shortName = shortName;
     _buttonBackgroundColor = buttonColor;
+<<<<<<< HEAD
+=======
+    _buttonTextColor = [UIColor whiteColor];
+>>>>>>> FirebaseUI/master
     _icon = iconImage;
     _scopes = scopes;
     _customParameters = customParameters;
     _loginHintKey = loginHintKey;
+<<<<<<< HEAD
     if (![_providerID isEqualToString:@"facebook.com"] && ![_providerID isEqualToString:@"apple.com"]) {
+=======
+    if ((_authUI.isEmulatorEnabled || ![_providerID isEqualToString:@"apple.com"]) && ![_providerID isEqualToString:@"facebook.com"]) {
+>>>>>>> FirebaseUI/master
       _provider = [FIROAuthProvider providerWithProviderID:self.providerID];
     }
   }
@@ -185,17 +211,42 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 + (FUIOAuth *)appleAuthProvider {
+<<<<<<< HEAD
+=======
+  return [self appleAuthProviderWithUserInterfaceStyle:UITraitCollection.currentTraitCollection.userInterfaceStyle];
+}
+
++ (FUIOAuth *)appleAuthProviderWithUserInterfaceStyle:(UIUserInterfaceStyle)userInterfaceStyle {
+  UIImage *iconImage = [FUIAuthUtils imageNamed:@"ic_apple"
+                            fromBundleNameOrNil:@"FirebaseOAuthUI"];
+  UIColor *buttonColor = [UIColor blackColor];
+  UIColor *buttonTextColor = [UIColor whiteColor];
+  if (userInterfaceStyle == UIUserInterfaceStyleDark) {
+    iconImage = [iconImage imageWithTintColor:[UIColor blackColor]];
+    buttonColor = [UIColor whiteColor];
+    buttonTextColor = [UIColor blackColor];
+  }
+>>>>>>> FirebaseUI/master
   FUIOAuth *provider = [[FUIOAuth alloc] initWithAuthUI:[FUIAuth defaultAuthUI]
                                              providerID:@"apple.com"
                                         buttonLabelText:@"Sign in with Apple"
                                               shortName:@"Apple"
+<<<<<<< HEAD
                                             buttonColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0]
                                               iconImage:[FUIAuthUtils imageNamed:@"ic_apple"
                                                              fromBundleNameOrNil:@"FirebaseOAuthUI"]
+=======
+                                            buttonColor:buttonColor
+                                              iconImage:iconImage
+>>>>>>> FirebaseUI/master
                                                  scopes:@[@"name", @"email"]
                                        customParameters:nil
                                            loginHintKey:nil];
   provider.buttonAlignment = FUIButtonAlignmentCenter;
+<<<<<<< HEAD
+=======
+  provider.buttonTextColor = buttonTextColor;
+>>>>>>> FirebaseUI/master
   return provider;
 }
 
@@ -215,10 +266,13 @@ NS_ASSUME_NONNULL_BEGIN
   return nil;
 }
 
+<<<<<<< HEAD
 - (UIColor *)buttonTextColor {
   return [UIColor whiteColor];
 }
 
+=======
+>>>>>>> FirebaseUI/master
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-implementations"
 - (void)signInWithEmail:(nullable NSString *)email
@@ -237,7 +291,11 @@ NS_ASSUME_NONNULL_BEGIN
   FIROAuthProvider *provider = self.provider;
   _providerSignInCompletion = completion;
 
+<<<<<<< HEAD
   if ([self.providerID isEqualToString:@"apple.com"]) {
+=======
+  if ([self.providerID isEqualToString:@"apple.com"] && !self.authUI.isEmulatorEnabled) {
+>>>>>>> FirebaseUI/master
     if (@available(iOS 13.0, *)) {
       ASAuthorizationAppleIDRequest *request = [[[ASAuthorizationAppleIDProvider alloc] init] createRequest];
       request.requestedScopes = @[ASAuthorizationScopeFullName, ASAuthorizationScopeEmail];
@@ -297,7 +355,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithAuthorization:(ASAuthorization *)authorization API_AVAILABLE(ios(13.0)) {
   ASAuthorizationAppleIDCredential* appleIDCredential = authorization.credential;
+<<<<<<< HEAD
   NSString *idToken = [NSString stringWithUTF8String:[appleIDCredential.identityToken bytes]];
+=======
+  NSString *idToken = [[NSString alloc] initWithData:appleIDCredential.identityToken encoding:NSUTF8StringEncoding];
+>>>>>>> FirebaseUI/master
   FIROAuthCredential *credential = [FIROAuthProvider credentialWithProviderID:@"apple.com"
                                                                       IDToken:idToken
                                                                   accessToken:nil];

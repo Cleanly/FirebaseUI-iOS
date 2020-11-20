@@ -1,12 +1,20 @@
 # source 'sso://cpdc-internal/firebase'
 source 'https://github.com/CocoaPods/Specs.git'
 
+<<<<<<< HEAD
 platform :ios, '9.0'
+=======
+platform :ios, '10.0'
+>>>>>>> FirebaseUI/master
 
 target 'FirebaseGoogleAuthUI' do
   use_frameworks!
 
+<<<<<<< HEAD
   pod 'GoogleSignIn', '~> 4.0'
+=======
+  pod 'GoogleSignIn', '~> 5.0'
+>>>>>>> FirebaseUI/master
   pod 'FirebaseUI/Auth', :path => '../'
 
   target 'FirebaseGoogleAuthUITests' do

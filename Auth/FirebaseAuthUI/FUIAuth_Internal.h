@@ -94,6 +94,14 @@ NS_ASSUME_NONNULL_BEGIN
     @brief The email auth provider, if any, that will be displayed in the default sign-in UI.
  */
 @property(nonatomic, weak, nullable) id<FUIEmailAuthProvider> emailAuthProvider;
+<<<<<<< HEAD:Auth/FirebaseAuthUI/FUIAuth_Internal.h
+=======
+
+/** @property emulatorEnabled
+    @brief Whether or not the auth emulator is being used.
+ */
+@property(nonatomic, assign, getter=isEmulatorEnabled) BOOL emulatorEnabled;
+>>>>>>> FirebaseUI/master:FirebaseAuthUI/FUIAuth_Internal.h
 
 @end
 

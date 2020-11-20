@@ -91,6 +91,14 @@ NS_ASSUME_NONNULL_BEGIN
 */
 + (FUIOAuth *)appleAuthProvider API_AVAILABLE(ios(13.0));
 
+<<<<<<< HEAD
+=======
+/** @fn appleAuthProvider
+    @brief Built-in OAuth provider with custom UserInterfaceStyle for Apple.
+*/
++ (FUIOAuth *)appleAuthProviderWithUserInterfaceStyle:(UIUserInterfaceStyle)userInterfaceStyle API_AVAILABLE(ios(13.0));
+
+>>>>>>> FirebaseUI/master
 @end
 
 NS_ASSUME_NONNULL_END

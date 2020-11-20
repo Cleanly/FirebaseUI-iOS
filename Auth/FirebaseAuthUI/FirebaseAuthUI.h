@@ -14,7 +14,7 @@
 //  limitations under the License.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 //! Project version number for FirebaseAuthUI.
 FOUNDATION_EXPORT double FirebaseAuthUIVersionNumber;
@@ -36,4 +36,7 @@ FOUNDATION_EXPORT const unsigned char FirebaseAuthUIVersionString[];
 #import "FUIPrivacyAndTermsOfServiceView.h"
 #import "FUIAuthTableViewCell.h"
 #import "FUIAuthTableHeaderView.h"
+<<<<<<< HEAD:Auth/FirebaseAuthUI/FirebaseAuthUI.h
 #import "FUIAuthSignInButton.h"
+=======
+>>>>>>> FirebaseUI/master:FirebaseAuthUI/FirebaseAuthUI.h
