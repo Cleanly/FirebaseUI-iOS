@@ -121,7 +121,7 @@ __attribute__((deprecated("Instead use authUI:didSignInWithAuthDataResult:error:
     @return an instance of @c FUIPasswordSignInViewController subclass.
  */
 - (FUIPasswordSignInViewController *)passwordSignInViewControllerForAuthUI:(FUIAuth *)authUI
-                                                                     email:(NSString *)email;
+                                                                     email:(nullable NSString *)email;
 
 /** @fn passwordSignInViewControllerForAuthUI:email:
     @brief Sent to the receiver to ask for an instance of @c FUIPasswordSignUpViewController subclass
@@ -132,7 +132,7 @@ __attribute__((deprecated("Instead use authUI:didSignInWithAuthDataResult:error:
     @return an instance of @c FUIPasswordSignUpViewController subclass.
  */
 - (FUIPasswordSignUpViewController *)passwordSignUpViewControllerForAuthUI:(FUIAuth *)authUI
-                                                                     email:(NSString *)email
+                                                                     email:(nullable NSString *)email
                                                         requireDisplayName:(BOOL)requireDisplayName;
 
 /** @fn passwordRecoveryViewControllerForAuthUI:email:
@@ -143,7 +143,7 @@ __attribute__((deprecated("Instead use authUI:didSignInWithAuthDataResult:error:
     @return an instance of @c FUIPasswordRecoveryViewController subclass.
  */
 - (FUIPasswordRecoveryViewController *)passwordRecoveryViewControllerForAuthUI:(FUIAuth *)authUI
-                                                                         email:(NSString *)email;
+                                                                         email:(nullable NSString *)email;
 
 /** @fn passwordVerificationViewControllerForAuthUI:email:newCredential:
     @brief Sent to the receiver to ask for an instance of @c FUIPasswordVerificationViewController subclass
@@ -154,7 +154,7 @@ __attribute__((deprecated("Instead use authUI:didSignInWithAuthDataResult:error:
     @return an instance of @c FUIPasswordVerificationViewController subclass.
  */
 - (FUIPasswordVerificationViewController *)passwordVerificationViewControllerForAuthUI:(FUIAuth *)authUI
-                                                                                 email:(NSString *)email
+                                                                                 email:(nullable NSString *)email
                                                                          newCredential:(FIRAuthCredential *)newCredential;
 @end
 
@@ -263,40 +263,10 @@ __attribute__((deprecated("Instead use authUI:didSignInWithAuthDataResult:error:
  */
 - (BOOL)signOutWithError:(NSError *_Nullable *_Nullable)error;
 
-/** @fn invokeResultCallbackWithAuthDataResult:error:
- 	@brief Invokes the auth UI result callback.
- 	@param authDataResult The sign in data result, if any.
- 	@param url The url, if any.
- 	@param error The error which occurred, if any.
+/** @fn useEmulatorWithHost:port
+    @brief Configures Firebase Auth to connect to an emulated host instead of the remote backend.
  */
-- (void)invokeResultCallbackWithAuthDataResult:(nullable FIRAuthDataResult *)authDataResult
-										   URL:(nullable NSURL *)url
-										 error:(nullable NSError *)error;
-
-/** @fn invokeOperationCallback:error:
- 	@brief Invokes the auth UI operation callback.
- 	@param operation The executed operation.
- 	@param error The error which occurred, if any.
- */
-- (void)invokeOperationCallback:(FUIAccountSettingsOperationType)operation
-						  error:(NSError *_Nullable)error;
-
-/** @fn providerWithID:
- 	@brief Returns first provider (if it exists) with specified provider ID.
- 	@param providerID The ID of the provider.
- */
-- (nullable id<FUIAuthProvider>)providerWithID:(NSString *)providerID;
-
-/** @fn signInWithProviderUI:presentingViewController:defaultValue:
- 	@brief Signs in with specified provider.
- 	@see FUIAuthDelegate.authUI:didSignInWithAuthDataResult:URL:error: for method callback.
- 	@param providerUI The authentication provider used for signing in.
- 	@param presentingViewController The view controller used to present the UI.
- 	@param defaultValue The provider default initialization value (e.g. email or phone number) used for signing in.
- */
-- (void)signInWithProviderUI:(id<FUIAuthProvider>)providerUI
-	presentingViewController:(UIViewController *)presentingViewController
-				defaultValue:(nullable NSString *)defaultValue;
+- (void)useEmulatorWithHost:(NSString *)host port:(NSInteger)port;
 
 @end
 
