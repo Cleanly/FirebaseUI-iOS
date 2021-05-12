@@ -65,7 +65,7 @@ PODS:
 
 DEPENDENCIES:
   - FirebaseUI/Auth (from `../`)
-  - GoogleSignIn (~> 5.0)
+  - GoogleSignIn
   - OCMock
 
 SPEC REPOS:
@@ -104,6 +104,6 @@ SPEC CHECKSUMS:
   OCMock: 29f6e52085b4e7d9b075cbf03ed7c3112f82f934
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 6b25b028abfe3f0d7f083a3acbba1a91422e56c0
+PODFILE CHECKSUM: fef38fbfa3b92a42faf18ebb7ab73996f4701399
 
 COCOAPODS: 1.10.1
