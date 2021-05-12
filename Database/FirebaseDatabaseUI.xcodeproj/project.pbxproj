@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F7435F9BCED42816CA0AAF5 /* Pods_FirebaseDatabaseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7495C6AF8E1B245DB708E63F /* Pods_FirebaseDatabaseUI.framework */; };
+		52538280A8B07B8B0B0BA246 /* Pods_FirebaseDatabaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296A577E87BB817315393DA1 /* Pods_FirebaseDatabaseUITests.framework */; };
 		8D69E1D021DD446600CFA49B /* FirebaseDatabaseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D69E1C621DD446600CFA49B /* FirebaseDatabaseUI.framework */; };
 		8D69E1D721DD446600CFA49B /* FirebaseDatabaseUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D69E1C921DD446600CFA49B /* FirebaseDatabaseUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D69E1F121DD44EB00CFA49B /* FUICollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D69E1E021DD44EA00CFA49B /* FUICollectionViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		296A577E87BB817315393DA1 /* Pods_FirebaseDatabaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseDatabaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		475A85DA95B3F51851B55319 /* Pods-FirebaseDatabaseUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDatabaseUI.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseDatabaseUI/Pods-FirebaseDatabaseUI.debug.xcconfig"; sourceTree = "<group>"; };
+		7495C6AF8E1B245DB708E63F /* Pods_FirebaseDatabaseUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseDatabaseUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E749A45607507A15DE46C1 /* Pods-FirebaseDatabaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDatabaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseDatabaseUITests/Pods-FirebaseDatabaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B5931AF72E6AEB478AB93EF /* Pods-FirebaseDatabaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDatabaseUITests.release.xcconfig"; path = "Target Support Files/Pods-FirebaseDatabaseUITests/Pods-FirebaseDatabaseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8D69E1C621DD446600CFA49B /* FirebaseDatabaseUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirebaseDatabaseUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D69E1C921DD446600CFA49B /* FirebaseDatabaseUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseDatabaseUI.h; sourceTree = "<group>"; };
 		8D69E1CA21DD446600CFA49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +85,7 @@
 		8D69E20821DD451D00CFA49B /* FUIIndexTableViewDataSourceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIIndexTableViewDataSourceTest.m; sourceTree = "<group>"; };
 		8D69E20921DD451D00CFA49B /* FUITableViewDataSourceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUITableViewDataSourceTest.m; sourceTree = "<group>"; };
 		8D69E20A21DD451D00CFA49B /* FUICollectionViewDataSourceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUICollectionViewDataSourceTest.m; sourceTree = "<group>"; };
+		A87BCDE8AA7827EA40744D4F /* Pods-FirebaseDatabaseUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDatabaseUI.release.xcconfig"; path = "Target Support Files/Pods-FirebaseDatabaseUI/Pods-FirebaseDatabaseUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7435F9BCED42816CA0AAF5 /* Pods_FirebaseDatabaseUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D69E1D021DD446600CFA49B /* FirebaseDatabaseUI.framework in Frameworks */,
+				52538280A8B07B8B0B0BA246 /* Pods_FirebaseDatabaseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +112,10 @@
 		5E6E54D5C69E9648700F3B53 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				475A85DA95B3F51851B55319 /* Pods-FirebaseDatabaseUI.debug.xcconfig */,
+				A87BCDE8AA7827EA40744D4F /* Pods-FirebaseDatabaseUI.release.xcconfig */,
+				88E749A45607507A15DE46C1 /* Pods-FirebaseDatabaseUITests.debug.xcconfig */,
+				8B5931AF72E6AEB478AB93EF /* Pods-FirebaseDatabaseUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -113,6 +127,7 @@
 				8D69E1D321DD446600CFA49B /* FirebaseDatabaseUITests */,
 				8D69E1C721DD446600CFA49B /* Products */,
 				5E6E54D5C69E9648700F3B53 /* Pods */,
+				AC92A186B6AE8AB7B5F52FFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +183,15 @@
 			path = FirebaseDatabaseUITests;
 			sourceTree = "<group>";
 		};
+		AC92A186B6AE8AB7B5F52FFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7495C6AF8E1B245DB708E63F /* Pods_FirebaseDatabaseUI.framework */,
+				296A577E87BB817315393DA1 /* Pods_FirebaseDatabaseUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -195,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D69E1DA21DD446600CFA49B /* Build configuration list for PBXNativeTarget "FirebaseDatabaseUI" */;
 			buildPhases = (
+				0B439058B376AE37251641C2 /* [CP] Check Pods Manifest.lock */,
 				8D69E1C121DD446600CFA49B /* Headers */,
 				8D69E1C221DD446600CFA49B /* Sources */,
 				8D69E1C321DD446600CFA49B /* Frameworks */,
@@ -213,6 +238,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D69E1DD21DD446600CFA49B /* Build configuration list for PBXNativeTarget "FirebaseDatabaseUITests" */;
 			buildPhases = (
+				C6A521D907AB316F2899094B /* [CP] Check Pods Manifest.lock */,
 				8D69E1CB21DD446600CFA49B /* Sources */,
 				8D69E1CC21DD446600CFA49B /* Frameworks */,
 				8D69E1CD21DD446600CFA49B /* Resources */,
@@ -278,6 +304,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B439058B376AE37251641C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseDatabaseUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6A521D907AB316F2899094B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseDatabaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D69E1C221DD446600CFA49B /* Sources */ = {
@@ -441,6 +514,7 @@
 		};
 		8D69E1DB21DD446600CFA49B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475A85DA95B3F51851B55319 /* Pods-FirebaseDatabaseUI.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +538,7 @@
 		};
 		8D69E1DC21DD446600CFA49B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A87BCDE8AA7827EA40744D4F /* Pods-FirebaseDatabaseUI.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -487,6 +562,7 @@
 		};
 		8D69E1DE21DD446600CFA49B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88E749A45607507A15DE46C1 /* Pods-FirebaseDatabaseUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FirebaseDatabaseUITests/Info.plist;
@@ -511,6 +587,7 @@
 		};
 		8D69E1DF21DD446600CFA49B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B5931AF72E6AEB478AB93EF /* Pods-FirebaseDatabaseUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FirebaseDatabaseUITests/Info.plist;
